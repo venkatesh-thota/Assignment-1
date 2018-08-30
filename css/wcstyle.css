@@ -1,0 +1,240 @@
+html,body{
+    font-family: 'Nunito', sans-serif;
+    background-color:white;
+    margin: 0px;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+}
+.hero-image{
+	width: 100%;
+	height: 100%; 
+	margin: 0px;
+	padding: 0px;
+	background-color: black; 
+	background-size:100% 100%;
+	background-position: all;
+}
+.hero-image img{
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	border: 0px;
+}
+.container-1{
+	display: flex;
+	align-items: center;
+	top: 0;
+    background-color: rgba(212,67,67,0.4);
+    position: fixed;
+    margin: 0;	
+    width: 100vw;
+    height: auto;
+}
+.header-left
+{
+	flex:1;
+}
+.header-right{
+	flex: 10;
+	display: flex;
+	flex-flow: row wrap;
+}
+.header-right li{
+	display: inline-block;
+	margin-right: 3vw;
+	font-size: 200%;
+	text-shadow: 3px 2px 5px red;
+}
+.header-right a{
+	text-decoration: none;
+	color: #444;
+}
+.header-right a:hover{
+	color: red;
+	text-shadow: 200% 200% red; 
+}
+@media all and (max-width: 700px) {
+.container-1{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	top: 0;
+	background-color: rgba(212,67,67,0.4);
+	position: fixed;
+	margin: 0;
+	width: 100%;
+}
+.header-left{
+	flex-basis: 100%;
+	flex:1;
+	justify-content: center;
+}
+.header-right{
+	flex: 10;
+}/* 
+.header-left img{
+    width: 100%;
+	height: 100%;	
+} */
+.header-right ul{
+	display: flex;
+	flex-direction: column;
+}
+.header-right li{
+	font-size: 100%;
+}
+.header-right a:hover{
+ font-size: 200%;
+ text-shadow: 200% 200% red;
+
+}
+}
+.content{
+	background-color:#444;
+	width: 100vw;
+}
+ .content h1{
+	margin: 0;
+    text-shadow: 3px 2px 5px red;  
+	text-align: center;	
+}
+.container-2{
+	display: flex;
+	margin: 0px;
+	flex-wrap: wrap;
+	align-items: stretch;
+	text-shadow: none;
+}
+.container-2 h1{
+    text-shadow: none;	
+}
+.first{
+  background-image: url("../images/yuvrajsingh.jpg");
+  background-size: 100% 100%; 
+  flex: 1;
+  background-color: #3a4e48;
+  /* box-sizing: border-box; */
+  background-repeat: no-repeat;
+ color: #F6F0F2;
+}
+.first h1{
+	text-shadow: 3px 2px 5px #FF0055;
+}
+.second{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/sachin.jpg");
+  flex: 1;
+  padding: 10px 25px;
+  background-color: #d8bfaa;
+  background-repeat: no-repeat;
+  text-shadow: 3px 2px 5px #6F7275;
+  background-size: 100% 100%; 
+  color: #F5E9A4;
+  /* box-sizing: border-box; */
+}  
+.second h1{
+  text-shadow: 3px 2px 5px brown;	
+}
+.third{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("..//images/dhoni.jpg"); 
+  flex: 1;
+  background-color: #d64933;
+  /* box-sizing: border-box; */
+  background-size: 100% 100%; 
+  color: #FFA07A;
+  background-repeat: no-repeat;
+}
+.third h1{
+  text-shadow: 3px 2px 5px brown;	
+}
+.container-2 h1{
+	text-shadow: 3px 2px 5px brown;
+}
+.fourth{
+  background-image: url("../images/dilshan.jpg");
+  background-size: 100% 100%; 	
+  flex: 1;
+  background-color: #3a4e48;
+  /* box-sizing: border-box; */
+  background-repeat: no-repeat;
+  color: #BCD2E7;
+}
+.fifth{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/afridi.jpg");
+  flex: 1;
+  padding: 10px 25px;
+  background-color: #d8bfaa;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+  color: #006080;
+  /* box-sizing: border-box; */
+}
+.sixth{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/zaheer.jpg"); 
+  flex: 1;
+  background-color: #d64933;
+  /* box-sizing: border-box; */
+  background-size: 100% 100%; 
+  color: #81B9A1  ;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width:700px) {
+	.container-2{
+		display: flex;
+		flex-flow:column wrap;
+	}
+}
+/* 		footer css 			*/
+
+.footer{
+	display: flex;
+	background-color: black;
+	width: 100vw;
+}
+.footer-box3{
+	flex: 10;
+	color: #808080;
+	box-sizing: border-box;
+	text-align: center;
+}
+@media screen and (max-width:700px)  {
+	.footer{
+		display: flex;
+		flex-flow: column wrap;
+	}		
+}	
+#facebook i{
+    height: 40px;
+    width: 40px;
+	color: #a2a2a2;
+}
+#facebook i:hover{
+	height: 40px;
+	width: 40px;
+	color: #3b5998;
+}
+#twitter i{
+	height: 40px;
+	width: 40px;
+	color: #a2a2a2;
+}
+#twitter i:hover{
+	height: 40px;width: 40px;
+	color: #0084b4;
+}
+#instagram i{
+	height: 40px;width: 40px;
+	color: #a2a2a2;
+}
+#instagram  i:hover{
+	height: 40px;width: 40px;
+	color:#cd486b;
+}
+#linkedin i{
+	height: 40px;width: 40px;
+	color: #a2a2a2;
+}
+#linkedin i:hover{
+	height: 40px;width: 40px;
+	color: #0077b5;
+}
